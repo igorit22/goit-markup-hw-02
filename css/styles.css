@@ -5,10 +5,17 @@
 /* Background color: white #FFFFFF*/
 /* Secondary background color: #2E2F42; */
 
+:root {
+  --main-text-color: #434455;
+  --second--text-color: #2e2f42;
+  --accent-sait-color: #4d5ae5;
+  --btn-color: #ffffff;
+}
+
 body {
   background-color: #ffffff;
-  color: #434455;
-  font-family: "Roboto";
+  color: var(--main-text-color);
+  font-family: "Roboto" sans-serif;
 }
 
 /* Website utilities */
@@ -35,15 +42,15 @@ body {
 /* Logo styles */
 
 .logo {
-  color: #2e2f42;
-  font-family: "Raleway";
+  color: var(--second--text-color);
+  font-family: "Raleway" sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3;
 }
 
 .logo-accent {
-  color: #4d5ae5;
+  color: var(--accent-sait-color);
 }
 
 /* Site nav */
@@ -56,23 +63,23 @@ body {
   letter-spacing: 0.02em;
 }
 .site-nav a {
-  color: #2e2f42;
+  color: var(--second--text-color);
 }
 .contacts a {
-  color: #434455;
+  color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.5;
   line-height: 24px;
   font-style: normal;
 }
 .site-nav .page-accent {
-  color: #4d5ae5;
+  color: var(--accent-sait-color);
 }
 
 /* Hero styles */
 
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--second--text-color);
   color: #ffffff;
 }
 
@@ -82,8 +89,8 @@ body {
   letter-spacing: 0.02em;
 }
 .button {
-  background-color: #4d5ae5;
-  color: #ffffff;
+  background-color: var(--accent-sait-color);
+  color: var(--btn-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -96,10 +103,10 @@ body {
 
 .line:hover,
 .line:focus {
-  color: #4d5ae5;
+  color: var(--accent-sait-color);
 }
 .line:active {
-  color: #4d5ae5;
+  color: var(--accent-sait-color);
 }
 
 /* ------------------Features--------------- */
@@ -109,7 +116,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--second--text-color);
 }
 .sections-text {
   font-size: 16px;
@@ -124,7 +131,7 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--second--text-color);
 }
 
 /* --------------------Team--------- */
@@ -138,7 +145,7 @@ body {
 /* ----------------Footer ----------*/
 
 footer {
-  background-color: #2e2f42;
+  background-color: var(--second--text-color);
 }
 .logo-light {
   color: #f4f4fd;
@@ -154,7 +161,7 @@ footer {
 /* --------Portfolio styles------------------ */
 
 .portfolio-nav {
-  color: #4d5ae5;
+  color: var(--accent-sait-color);
   background: #f4f4fd;
   font-weight: 500;
   font-size: 16px;
@@ -163,11 +170,12 @@ footer {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
 .portfolio-nav:hover,
 .portfolio-nav:focus {
-  background-color: #4d5ae5;
+  background-color: var(--accent-sait-color);
   color: #ffffff;
 }
 
