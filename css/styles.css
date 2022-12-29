@@ -10,12 +10,14 @@
   --second--text-color: #2e2f42;
   --accent-sait-color: #4d5ae5;
   --btn-color: #ffffff;
+  --typical-lh: 1.5;
+  --typical-ls: 0.02em;
 }
 
 body {
   background-color: #ffffff;
   color: var(--main-text-color);
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Website utilities */
@@ -43,7 +45,7 @@ body {
 
 .logo {
   color: var(--second--text-color);
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3;
@@ -58,9 +60,9 @@ body {
 .site-nav {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--typical-lh);
   line-height: 24px;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--typical-ls);
 }
 .site-nav a {
   color: var(--second--text-color);
@@ -68,7 +70,7 @@ body {
 .contacts a {
   color: var(--main-text-color);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--typical-lh);
   line-height: 24px;
   font-style: normal;
 }
@@ -86,14 +88,14 @@ body {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--typical-ls);
 }
 .button {
   background-color: var(--accent-sait-color);
   color: var(--btn-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--typical-lh);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -115,13 +117,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--typical-ls);
   color: var(--second--text-color);
 }
 .sections-text {
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: var(--typical-lh);
+  letter-spacing: var(--typical-ls);
 }
 
 /* -------------What are we doing------------- */
@@ -129,7 +131,7 @@ body {
 .sections-title {
   font-size: 36px;
   line-height: 1.1;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--typical-ls);
   text-transform: capitalize;
   color: var(--second--text-color);
 }
@@ -153,8 +155,8 @@ footer {
 
 .footer-text {
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: var(--typical-lh);
+  letter-spacing: var(--typical-ls);
   color: #e7e9fc;
 }
 
@@ -165,7 +167,7 @@ footer {
   background: #f4f4fd;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--typical-lh);
   line-height: 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
