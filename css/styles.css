@@ -9,6 +9,7 @@
   --main-text-color: #434455;
   --second--text-color: #2e2f42;
   --accent-sait-color: #4d5ae5;
+  --main-hover-color: #404BBF;
   --btn-color: #ffffff;
   --typical-lh: 1.5;
   --typical-ls: 0.02em;
@@ -49,6 +50,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3;
+  text-decoration: none;
 }
 
 .logo-accent {
@@ -103,12 +105,17 @@ body {
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  background-color: var(--main-hover-color);
+}
+
 .line:hover,
 .line:focus {
-  color: var(--accent-sait-color);
+  color: var(--main-hover-color);
 }
 .line:active {
-  color: var(--accent-sait-color);
+  color: var(--main-hover-color);
 }
 
 /* ------------------Features--------------- */
@@ -177,12 +184,8 @@ footer {
 
 .portfolio-nav:hover,
 .portfolio-nav:focus {
-  background-color: var(--accent-sait-color);
+  background-color: var(--main-hover-color);
   color: #ffffff;
 }
 
 /* --------Contacts styles------------------ */
-
-.test {
-  background-color: orange;
-}
